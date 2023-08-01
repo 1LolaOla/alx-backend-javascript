@@ -1,6 +1,4 @@
-// File: 5-typed_arrays.js
-
-function createInt8TypedArray(length, position, value) {
+export default function createInt8TypedArray(length, position, value) {
   const buffer = new ArrayBuffer(length);
   const view = new DataView(buffer);
 
@@ -12,6 +10,4 @@ function createInt8TypedArray(length, position, value) {
 
   return view;
 }
-
-export default createInt8TypedArray;
 
